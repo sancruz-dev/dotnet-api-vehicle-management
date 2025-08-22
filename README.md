@@ -1,15 +1,11 @@
 ﻿# Vehicle Management System API
 
 [![.NET](https://img.shields.io/badge/.NET-6.0-blue.svg)](https://dotnet.microsoft.com/)
-[![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/)
 [![Entity Framework](https://img.shields.io/badge/Entity%20Framework-512BD4?style=flat&logo=.net&logoColor=white)](https://docs.microsoft.com/en-us/ef/)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=json-web-tokens&logoColor=white)](https://jwt.io/)
 [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=swagger&logoColor=black)](https://swagger.io/)
 [![MSTest](https://img.shields.io/badge/MSTest-68217A?style=flat&logo=microsoft&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)
-[![Clean Architecture](https://img.shields.io/badge/Clean%20Architecture-00599C?style=flat&logo=architecture&logoColor=white)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API](https://img.shields.io/badge/API-REST-orange.svg)](https://restfulapi.net/)
 
 A comprehensive RESTful API built with .NET that demonstrates modern software development practices including Clean Architecture, Entity Framework, JWT authentication, and comprehensive testing.
 
