@@ -1,6 +1,6 @@
 ﻿# Vehicle Management System API
 
-[![.NET](https://img.shields.io/badge/.NET-6.0-blue.svg)](https://dotnet.microsoft.com/)
+[![.NET](https://img.shields.io/badge/.NET-7.0-blue.svg)](https://dotnet.microsoft.com/)
 [![Entity Framework](https://img.shields.io/badge/Entity%20Framework-512BD4?style=flat&logo=.net&logoColor=white)](https://docs.microsoft.com/en-us/ef/)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=json-web-tokens&logoColor=white)](https://jwt.io/)
@@ -24,10 +24,33 @@ A comprehensive RESTful API built with .NET that demonstrates modern software de
 This project follows **Clean Architecture** principles with clear separation of concerns:
 
 ```
-├── Domain Layer (Entities, Interfaces)
-├── Application Layer (Use Cases, DTOs, Validators)
-├── Infrastructure Layer (Data Access, External Services)
-└── Presentation Layer (Controllers, Middleware)
+dotnet-api-vehicle-management/
+│
+├── API/                        # Projeto principal (API Minimalista)
+│   ├── Domain/                 # Núcleo do domínio (coração do DDD)
+│   │   ├── Entities/           # Entidades de negócio
+│   │   ├── Enums/              # Enumerações específicas do domínio
+│   │   ├── ValueObjects/       # Objetos de valor (imutáveis, com igualdade por valor)
+│   │   ├── Interfaces/         # Contratos de repositórios e serviços
+│   │   └── Services/           # Regras de domínio e políticas de negócio
+│   │
+│   ├── Infrastructure/         # Implementações concretas do domínio
+│   │   ├── DB/                 # Contexto, mapeamentos e migrações
+│   │   ├── Auth/               # Implementação de autenticação/autorização
+│   │   └── Repositories/       # Repositórios concretos das interfaces de domínio
+│   │
+│   ├── Controllers/            # Pontos de entrada (endpoints da Minimal API)
+│   ├── ModelViews/             # Modelos de entrada e saída (DTOs, Responses)
+│   ├── Program.cs              # Inicialização da API
+│   ├── Startup.cs              # Configuração de serviços e middlewares
+│   └── appsettings.json
+│
+└── Test/                       # Projeto de testes
+    ├── Domain/                 # Testes de regras de negócio
+    ├── Mocks/                  # Simulações (repositórios, serviços)
+    ├── Helpers/                # Utilitários de teste
+    └── Requests/               # Cenários e casos de teste
+
 ```
 
 ### Key Architectural Decisions:
@@ -97,7 +120,7 @@ PUT    /api/admin/users/{id}  # Update user (Admin only)
 1. **Clone the repository**
 ```bash
 git clone [repository-url]
-cd vehicle-management-api
+cd dotnet-api-vehicle-management
 ```
 
 2. **Configure Database Connection**
