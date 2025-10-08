@@ -111,7 +111,7 @@ PUT    /api/admin/users/{id}  # Update user (Admin only)
 ## 🔧 Getting Started
 
 ### Prerequisites
-- .NET 6+ SDK
+- .NET 7+ SDK
 - MySQL Server
 - MySQL CLI tools
 
@@ -195,7 +195,3 @@ dotnet test
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
----
-
-**Built with ❤️ using .NET, Entity Framework, and Clean Architecture principles**
